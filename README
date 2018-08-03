@@ -11,6 +11,18 @@
    - SunOS 2.6-10
 - file loaded entirely in memory, you limited only to what realloc(3) return
 
+How minimal?
+~~~~~~~~~~~~
+Very minimal. It's smaller than Ed, uemacs, and Nano. I've included vim and
+my own editor, Gomacs - which is a statically compiled Go program - for scale:
+
+-rwxr-xr-x 1 root     root      19K Aug  3 14:25 /usr/local/bin/e
+-rwxr-xr-x 1 root     root      51K Apr 26  2014 /bin/ed
+-rwxr-xr-x 1 root     root     204K Feb 15  2017 /bin/nano
+-rwxr-xr-x 1 root     root     525K Aug  3 14:31 /usr/bin/em
+-rwxr-xr-x 1 root     root     2.4M Nov 24  2016 /usr/bin/vim.basic
+-rwxr-xr-x 1 KonaKona KonaKona 4.9M Jun 23 19:04 /home/KonaKona/bin/gomacs
+
 Controls
 ~~~~~~~~
 charasters, Enter, Up, Down, Left, Right, Home, End, PgUp, PgDn, Del, Backspace
