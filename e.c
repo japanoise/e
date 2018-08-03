@@ -569,6 +569,7 @@ int	main (int argv, char **argc)
 			if (cur_pos < eof_pos)
 				del_mem (cur_pos, 1);
 			break;
+		case 0x7f:	/* HACK: my terminal is badly behaved and sends a DEL */
 		case KEY_BACKSPACE:
 			if (cur_pos)
 				del_mem (--cur_pos, 1);
