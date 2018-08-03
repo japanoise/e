@@ -12,7 +12,7 @@ debug: CFLAGS=-g -W -Wall -O0
 debug: e
 
 e:
-	$(CC) $(CFLAGS) $(LDFLAGS) -o e e.c
+	$(CC) $(CFLAGS) -o e e.c $(LDFLAGS)
 
 install: e
 	$(INSTALL_PROGRAM) -s e $(prefix)/bin/e
