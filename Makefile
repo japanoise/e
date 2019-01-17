@@ -11,8 +11,8 @@ all: e
 debug: CFLAGS=-g -W -Wall -O0
 debug: e
 
-e:
-	$(CC) $(CFLAGS) -o e e.c $(LDFLAGS)
+e: e.c
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 install: e
 	$(INSTALL_PROGRAM) -s e $(prefix)/bin/e
