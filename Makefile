@@ -1,5 +1,5 @@
 prefix ?= /usr/local
-MANDIR?=/usr/share/man/man1
+MANDIR?=$(prefix)/share/man/man1
 INSTALL_PROGRAM?=install -m 0755
 INSTALL_FILE?=install -m 0644
 
